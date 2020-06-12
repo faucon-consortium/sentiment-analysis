@@ -126,6 +126,54 @@ root
 </pre></big>
 
 -----------------------------
+### Attributes for Text Analysis
+<big><pre>
+root
+ |-- [created_at](#created_at): **string** (nullable = ***false***)
+ |-- [id_str](#id_str): **string** (nullable = ***false***)
+ |-- [text](#text): **string** (nullable = ***false***)
+ |-- [user](#user): **struct** (nullable = ***false***)
+ |    |-- [id_str](#user-id_str): **string** (nullable = ***false***)
+ |    |-- [name](#user-name): **string** (nullable = ***false***)
+ |    |-- [description](#user-description): **string** (nullable = ***true***)
+ |    |-- [created_at](#user-created_at): **string** (nullable = ***false***)
+(nullable = ***false***)
+ |-- [entities](#entities): **struct** (nullable = ***false***)
+ |    |-- [hashtags](#entities-hashtags): **array** (nullable = ***false***)
+ |    |    |-- element: **struct** (containsNull = ***true***)
+ |    |    |    |-- [indices](#entities-hashtags-indices): **array** (nullable = ***true***)
+ |    |    |    |    |-- element: **long** (containsNull = ***true***)
+ |    |    |    |-- [text](#entities-hashtags-text): **string** (nullable = ***true***)
+ |    |-- [media](#entities-media): **array** (nullable = ***false***)
+ |    |    |-- element: **struct** (containsNull = ***true***)
+ |    |    |    |-- [media_url](#entities-media-media_url): **string** (nullable = ***false***)
+ |    |    |    |-- [media_url_https](#entities-media-media_url_https): **string** (nullable = ***false***)
+ |    |    |    |-- [type](#entities-media-type): **string** (nullable = ***false***)
+ |    |-- [polls](#entities-polls): **array** (nullable = ***false***)
+ |    |    |-- element: **struct** (containsNull = ***true***)
+ |    |    |    |-- [duration_minutes](#entities-poll-duration_minutes): **long** (nullable = ***false***)
+ |    |    |    |-- [end_datetime](#entities-poll-end_datetime): **string** (nullable = ***false***)
+ |    |    |    |-- [options](#entities-poll-options): **array** (nullable = ***false***)
+ |    |    |    |    |-- element: struct (containsNull = true)
+ |    |    |    |    |    |-- position: long (nullable = true)
+ |    |    |    |    |    |-- text: string (nullable = true)
+ |    |-- [symbols](#entities-symbols): **array** (nullable = ***false***)
+ |    |    |-- element: **struct** (containsNull = ***true***)
+ |    |    |    |-- [indices](#entities-symbol-indices): **array** (nullable = ***true***)
+ |    |    |    |    |-- element: long (containsNull = ***false***)
+ |    |    |    |-- [text](#entities-symbol-text): **string** (nullable = ***false***)
+ |    |-- [user_mentions](#entities-user_mentions): **array** (nullable = ***false***)
+ |    |    |-- element: **struct** (containsNull = ***true***)
+ |    |    |    |-- [id_str](#entities-user_mention-id_str): **string** (nullable = ***false***)
+ |    |    |    |-- [indices](#entities-user_mention-indices): **array** (nullable = ***false***)
+ |    |    |    |    |-- element: **long** (containsNull = ***false***)
+ |    |    |    |-- [name](#entities-user_mention-name): **string** (nullable = ***false***)
+ |    |    |    |-- [screen_name](#entities-user_mention-screen_name): **string** (nullable = ***false***)
+ |-- lang: string (nullable = true)
+</pre></big>
+
+
+
 
 ### Fields and Attributes Description
 
