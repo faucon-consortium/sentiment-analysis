@@ -118,7 +118,6 @@ root
  |    |    |    |-- [media_url](#entities-media-media_url): **string** (nullable = ***false***)
  |    |    |    |-- [media_url_https](#entities-media-media_url_https): **string** (nullable = ***false***)
  |    |    |    |-- [type](#entities-media-type): **string** (nullable = ***false***)
- 
  |-- favorited: boolean (nullable = true)
  |-- retweeted: boolean (nullable = true)
  |-- possibly_sensitive: boolean (nullable = true)
